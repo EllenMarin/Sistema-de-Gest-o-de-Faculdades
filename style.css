@@ -78,8 +78,8 @@ th, td {
     display: flex;
     flex-direction: column;
 }
-.side-menu .brand-name{
-    height: 10vh;
+.side-menu .brand-name img{
+    width: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -102,7 +102,7 @@ th, td {
     right: 0;
     width: 80vw;
     height: 100vh;
-    background: white;
+    background: #f1f1f1;
     
 }
 .container .header{
@@ -178,24 +178,29 @@ th, td {
     position: relative;
     margin-top: 10vw;
     min-height: 90vh;
-    background: white;
+    background: #f1f1f1;
 }
 .container .content .cards{
-    padding: 0 0 40px 0;
+    padding: 0 0 10px 0;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 .container .content .cards .card{
-    width: 240px;
-    height: 140px;
-    background: #f1f1f1;
+    width: 300px;
+    height: 200px;
+    background: white;
     margin: 15px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.container .content .cards .card img{
+    background: #7bc5ea;
+    padding: 10px;
+    border-radius: 6px;
 }
 
 .container .content .content-2{
@@ -204,13 +209,13 @@ th, td {
     justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap;
-    background: white;
+    background: #f1f1f1;
     
 }
 .container .content .content-1 .cursos{
     min-height: 30vh;
     flex: 5;
-    background: #f1f1f1;
+    background: white;
     margin: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -220,7 +225,7 @@ th, td {
 .container .content .content-2 .teacher{
     min-height: 30vh;
     flex: 5;
-    background: #f1f1f1;
+    background: white;
     margin: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -232,6 +237,7 @@ th, td {
 .container .content .content-2 .students table td:nth-child(1) img{
     height: 40px;
     width: 40px;
+    
 }
 
 .container .content .content-2 .students .divTable,
@@ -262,7 +268,7 @@ table {
     border-collapse: collapse;
   }
 thead {
-    background-color: whitesmoke;
+    background-color: white;
 }
 th{
     font-weight: 300;
@@ -310,6 +316,9 @@ tbody tr td.acao {
     }
 }
 @media screen and (max-width:940px){
+    .brand-name img{
+        width: 40px;
+    }
     .side-menu li span{
         display: none;
     }
@@ -351,10 +360,7 @@ tbody tr td.acao {
     
 }
 @media screen and (max-width:536px){
-    .brand-name h1{
-        font-size: 16px;
-        
-    }
+    
     
     .container .content .cards{
         justify-content: center;
@@ -362,6 +368,7 @@ tbody tr td.acao {
     .side-menu li img{
         width: 30px;
         height: 30px;
+
     }
     .container .content .content-1 .cursos table th:nth-child(2),
     .container .content .content-2 .cursos table td:nth-child(2){
