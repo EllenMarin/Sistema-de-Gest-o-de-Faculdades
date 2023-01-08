@@ -21,7 +21,7 @@
             <li><img src="./img/teacher.png" alt="">&nbsp; <span>Professores</span> </li>
             <li><img src="./img/educacao.png" alt="">&nbsp; <span>Cursos</span> </li>
             <li><img src="./img/enigma.png" alt="">&nbsp; <span>Disciplinas</span> </li>
-            
+
         </ul>
     </div>
     <div class="container">
@@ -79,13 +79,14 @@
                         <img src="img/enigma.png" alt="">
                     </div>
                 </div>
-                
+
             </div>
-            <div class="content-2">
+
+            <div class="content-1">
                 <div class="cursos">
                     <div class="title">
                         <h2>Cursos universitários</h2>
-                        <a href="#" class="btn">Novo registro</a>
+                        <a href="#" class="btn">Ver mais</a>
                     </div>
                     <table>
                         <tr>
@@ -99,106 +100,144 @@
                             <th>Engenharia de software</th>
                             <th>HTML</th>
                             <th>2</th>
-                            <th>João</th>
-                            <th>Maria</th>
+                            <th><a href="#"> <img src="img/perfil.png" alt=""></a></th>
+                            <th><a href="#"></a><img src="img/info.png" alt=""></a></th>
                         </tr>
                         <tr>
                             <th>Engenharia de software</th>
                             <th>JavaScript</th>
                             <th>2</th>
-                            <th>João</th>
-                            <th>Maria</th>
+                            <th><a href="#"> <img src="img/perfil.png" alt=""></a></th>
+                            <th><a href="#"></a><img src="img/info.png" alt=""></a></th>
                         </tr>
                         <tr>
                             <th>Engenharia de software</th>
                             <th>CSS</th>
                             <th>2</th>
-                            <th>João</th>
-                            <th>Maria</th>
+                            <th><a href="#"><img src="img/perfil.png" alt=""></a></th>
+                            <th><a href="#"></a><img src="img/info.png" alt=""></a></th>
                         </tr>
                         <tr>
                             <th>Engenharia de software</th>
                             <th>Angular</th>
                             <th>2</th>
-                            <th>João</th>
-                            <th>Maria</th>
+                            <th><a href="#"> <img src="img/perfil.png" alt=""></a></th>
+                            <th><a href="#"></a><img src="img/info.png" alt=""></a></th>
                         </tr>
                     </table>
                 </div>
+            </div>
+
+            <div class="content-2">
                 <div class="students">
                     <div class="title">
                         <h2>Alunos</h2>
-                        <a href="#" class="btn">Novo registro</a>
+                        <button onclick="openModalStudents()" id="new"><img src="" alt=""> <span>Ver mais</span> +
+                            </img></button>
                     </div>
-                    <table>
-                        <tr>
-                            <th>Nome</th>
-                            <th>Data de nascimento</th>
-                            <th>Nº de matrícula</th>
-                            <th>Notas</th>
-                        </tr>
-                        <tr>
-                            <td>Maria</td>
-                            <td>17/03/1997</td>
-                            <td><img src="img/info.png" alt=""></td>
-                            <td>10</td>
-                        </tr>
-                        <tr>
-                            <td>Maria</td>
-                            <td>17/03/1997</td>
-                            <td><img src="img/info.png" alt=""></td>
-                            <td>10</td>
-                        </tr>
-                        <tr>
-                            <td>Maria</td>
-                            <td>17/03/1997</td>
-                            <td><img src="img/info.png" alt=""></td>
-                            <td>10</td>
-                        </tr>
-                        
-                    </table>
+
+                    <div class="divTable">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Nome completo</th>
+                                    <th>Data de nascimento</th>
+                                    <th>Nº de matricula</th>
+                                    <th>Notas</th>
+
+                                </tr>
+
+                                <tr>
+                                    <th>Maria</th>
+                                    <th>18-03-1997</th>
+                                    <th>1234567</th>
+                                    <th>10</th>
+                                </tr>
+                                <tr>
+                                    <th>Maria</th>
+                                    <th>18-03-1997</th>
+                                    <th>1234567</th>
+                                    <th>10</th>
+                                </tr>
+                                <tr>
+                                    <th>Maria</th>
+                                    <th>18-03-1997</th>
+                                    <th>1234567</th>
+                                    <th>10</th>
+                                </tr>
+                                <tr>
+                                    <th>Maria</th>
+                                    <th>18-03-1997</th>
+                                    <th>1234567</th>
+                                    <th>10</th>
+                                </tr>
+                            </thead>
+                            <!--<tbody class="tbody-students">
+                            </tbody>-->
+                        </table>
+                    </div>
+                    <!--<div class="modal-container-students">
+                        <div class="modal">
+                            <form>
+                                <label for="name">Nome completo</label>
+                                <input id="nameS" type="text" required />
+
+                                <label for="date">Data de nascimento</label>
+                                <input id="dateS" type="date" required />
+
+                                <label for="number">Nº de matricula</label>
+                                <input id="number" type="number" required />
+
+                                <label for="score">Notas</label>
+                                <input id="score" type="text" required />
+                                <button id="btnSaveStudents">Salvar</button>
+                            </form>
+                        </div>
+                    </div>-->
                 </div>
                 <div class="teacher">
                     <div class="title">
                         <h2>Professores</h2>
-                        <a href="#" class="btn">Novo registro</a>
+                        <button onclick="openModal()" id="new"><img src="" alt=""> <span> Novo registro</span> +
+                            </img></button>
                     </div>
-                    <table>
-                        <tr class="sub-title">
-                            <th>Nome</th>
-                            <th>Data de nascimento</th>
-                            <th>Salário</th>
-                            <th><a href="#" class="btn">+</a></th>
-                            <td><img src="img/lixeira.png" alt=""></td>
-                            
-                        </tr>
-                        <tr>
-                            <td>Maria</td>
-                            <td>17/03/1997</td>
-                            <td>1000€</td>
-                            <th><a href="#" class="btn">+</a></th>
-                            <td><img src="img/lixeira.png" alt=""></td>
-                        </tr>
-                        <tr>
-                            <td>Maria</td>
-                            <td>17/03/1997</td>
-                            <td>1000€</td>
-                            <th><a href="#" class="btn">+</a></th>
-                            <td><img src="img/lixeira.png" alt=""></td>
-                        </tr>
-                        <tr>
-                            <td>Maria</td>
-                            <td>17/03/1997</td>
-                            <td>1000€</td>
-                            <th><a href="#" class="btn">+</a></th>
-                            <td><img src="img/lixeira.png" alt=""></td>
-                        </tr>
-                        
-                    </table>
+
+                    <div class="divTable">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Nome completo</th>
+                                    <th>Data de nascimento</th>
+                                    <th>Salário</th>
+                                    <th class="acao">Editar</th>
+                                    <th class="acao">Excluir</th>
+                                </tr>
+                            </thead>
+                            <tbody class="tbody">
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-container">
+                        <div class="modal">
+                            <form>
+                                <label for="name">Nome</label>
+                                <input id="name" type="text" required />
+
+                                <label for="date">Data de nascimento</label>
+                                <input id="date" type="date" required />
+
+                                <label for="salary">Salário</label>
+                                <input id="salary" type="number" required />
+                                <button id="btnSave">Salvar</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
