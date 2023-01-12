@@ -110,7 +110,7 @@ th, td {
     top:0;
     right: 0;
     width: 80vw;
-    height: 10vh;
+    height: 85px;
     background: white;
     align-items: center;
     justify-content: center;
@@ -181,7 +181,6 @@ th, td {
     background: #f1f1f1;
 }
 .container .content .cards{
-    padding: 0 0 10px 0;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -419,12 +418,9 @@ tbody tr td.acao {
   .modal button {
     width: 100%;
     margin: 10px auto;
-    outline: none;
-    border-radius: 20px; 
-    padding: 5px 10px; 
+    outline: none;  
     width: 100%;
-    border: none;
-    background-color: rgb(57, 57, 226);
+   
     color: white;
   }
   
